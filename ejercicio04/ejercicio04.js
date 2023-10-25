@@ -6,8 +6,18 @@
  *  que diga Has introducido uno o varios caracteres no validos
  */
 
-function sumOrMultiply() {
- //Escribe tu codigo aqui
+function sumOrMultiply(a,b,c) {
+ if(isNaN(a)||isNaN(b)||isNaN(c)||a==""||b==""||c==""){
+    return `has introducido uno o varios caracteres no validos`;
+ }else{
+    if(a<0){
+        let producto= a*b*c;
+        return producto;
+    }else{
+        let suma =a+b+c;
+        return suma;
+    }
+ }
 }
 
 module.exports = { sumOrMultiply };

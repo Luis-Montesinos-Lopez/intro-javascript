@@ -6,8 +6,20 @@
  *  numero.
  */
 
-function determinarTipoNumero() {
- //Escribe tu codigo aqui
+function determinarTipoNumero(num) {
+  if(num==""){
+    return `No has introducido un numero`
+  }else{
+    if (num==null) {
+        return `El numero es nulo`
+    } else {
+        if(num<0){
+            return `El numero es negativo`
+        }else {
+            return `El numero es positivo`
+        }
+    }
+  }
 }
 
 module.exports = { determinarTipoNumero };
