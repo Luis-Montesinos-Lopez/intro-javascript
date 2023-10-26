@@ -8,7 +8,7 @@
 
 function sumOrMultiply(a,b,c) {
  if(isNaN(a)||isNaN(b)||isNaN(c)||a==""||b==""||c==""){
-    return `has introducido uno o varios caracteres no validos`;
+    return `Has introducido uno o varios caracteres no validos`;
  }else{
     if(a<0){
         let producto= a*b*c;
