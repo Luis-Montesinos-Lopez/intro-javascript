@@ -7,8 +7,17 @@
  *  diciendo 'Debes introducir sólo números. Inténtalo de nuevo'
  */
 
-function notaMedia() {
-  //Escribe tu codigo aqui
+function notaMedia(a,b,c,d,e) {
+  let notaMedia=(a+b+c+d+e)/5;
+  if(isNaN(a)||isNaN(b)||isNaN(c)||isNaN(d)||isNaN(e)){
+    return `Debes introducir solo numeros. Intentalo de nuevo`;
+  }else{
+  if(notaMedia>=5){
+    return`${notaMedia} aprobado`
+  }else{
+    return `${notaMedia} suspenso`
+  }}
+  
 }
 
 module.exports = { notaMedia };

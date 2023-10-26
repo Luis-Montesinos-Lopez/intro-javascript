@@ -13,8 +13,23 @@
  *  trabajador podria no entrar en ninguna categoria.
  */
 
-function nuevoSalario() {
-  //Escribe tu codigo aqui
+function nuevoSalario(sueldo,categoria) {
+  let aumento;
+    if(categoria==1){
+      aumento=sueldo+sueldo*0.15;
+      return aumento;
+    } else if(categoria==2){
+      aumento=sueldo+sueldo*0.10;
+      return aumento;
+    }else if(categoria==3){
+      aumento=sueldo+sueldo*0.06;
+      return aumento;
+    }else if(categoria==4){
+      aumento=sueldo+sueldo*0.03;
+      return aumento;
+    }else{
+      return sueldo;
+    }
 }
 
 module.exports = { nuevoSalario };

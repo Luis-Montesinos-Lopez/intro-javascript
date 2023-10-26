@@ -13,8 +13,24 @@
  *  descuento correspondiente.
  */
 
-function descuentoCompra() {
-  //Escribe tu codigo aqui
+function descuentoCompra(precio) {
+  let precioDesc;
+  if(precio<500){
+    return precio;
+  }else if(precio>=500&&precio<=1000){
+    precioDesc=precio-(precio*0.05);
+    return precioDesc;
+  }else if(precio>=1000&&precio<=7000){
+    precioDesc=precio-(precio*0.10)
+    return precioDesc;
+  }else if(precio>=7000&&precio<=15000){
+    precioDesc=precio-(precio*0.20);
+    return precioDesc
+  }else{
+    precioDesc=precio-(precio*0.25);
+    return precioDesc;
+
+  }
 }
 
 module.exports = { descuentoCompra };
