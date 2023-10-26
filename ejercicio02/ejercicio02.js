@@ -25,8 +25,8 @@ function divide(a,b) {
     return resultado;
 }
 
-function total(sum,substract,multiply,divide) {
- resultadoTotal=sum(resultado)+substract(resultado)+multiply(resultado)+divide(resultado);
+function total(a,b) {
+ resultadoTotal=sum(a,b)+substract(a,b)+multiply(a,b)+divide(a,b);
  return resultadoTotal;
 }
 
