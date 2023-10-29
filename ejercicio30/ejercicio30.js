@@ -1,5 +1,5 @@
 /**
- *  Ejercicio 30
+ *  Ejercicio 30     REVISAR EL LUNES
  *  Escribir un algoritmo para cada apartado que retorne un triangulo como los mostrados
  *  a continuacion hasta un numero de filas introducidos por teclado. El algoritmo recibira el
  *  numero de filas por parametros.

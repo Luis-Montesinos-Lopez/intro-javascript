@@ -1,4 +1,4 @@
-/** Ejercicio 34
+/** Ejercicio 34    LO HE TENIDO QUE HACER CON FOR
  * a) Generar un numero aleatorio (del 1 al 10) que el usuario debe adivinar.
  * b) Crear un algoritmo que reciba un array con longitud 10 de numeros en el que utilizando un bucle
  *    while que calcule en que posicion del array se encuentra el numero que buscamos.
@@ -8,11 +8,20 @@
  */
 
 function generateRandomNumber() {
-  //Escribe tu codigo aqui
+  let numeroAleatorio=Math.floor(Math.random() * 10) + 1;
+    return numeroAleatorio;
 }
 
 function playGame(randomNumber, arrayNum) {
-  //Escribe tu codigo aqui
+  let contador = 1;
+    for(let i = 0; i < arrayNum.length; i++){
+      if(arrayNum[i] == randomNumber){
+        return `Exacto, has acertado en el ${contador} intento! el numero era el ${randomNumber}`;
+      } else {
+        contador++;
+      }
+    }
+    return `Ninguno de los numeros introducido coincide con el creado aleatoriamente`;
 }
 module.exports = {
   generateRandomNumber,

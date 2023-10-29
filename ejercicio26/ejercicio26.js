@@ -1,5 +1,5 @@
 /**
- *  Ejercicio 26
+ *  Ejercicio 26    REVISAR EL LUNES
  *  Desarrollar un algoritmo que lea un array de 10 numeros y
  *  calule el cubo de cada uno de ellos. Recuerda la estructura For;
  */

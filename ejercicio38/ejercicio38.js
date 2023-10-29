@@ -4,8 +4,12 @@
  * parametros invertido.
  */
 
-function invertArray() {
-  //Escribe tu codigo aqui
+function invertArray(array) {
+  let arrayInvertido=[];
+  for(let i=0;i<array.length;i++){
+   arrayInvertido[i]=array[array.length-i-1];
+  }
+  return arrayInvertido
 }
 
 module.exports = { invertArray };
