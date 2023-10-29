@@ -7,8 +7,12 @@
  *  Es decir, para N = 5, el factorial seria 5! = 5*4*3*2*1 = 120;
  */
 
-function factorialNumero() {
-  //Escribe tu codigo aqui
+function factorialNumero(n) {
+  let factorial=1;
+  for(let i=1;i<=n;i++){
+    factorial=factorial*i;
+  }
+  return factorial;
 }
 
 module.exports = { factorialNumero };
