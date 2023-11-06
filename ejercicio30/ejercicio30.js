@@ -61,5 +61,7 @@ function trianguloConsolaC(num) {
   }
   return triangulo;
 }
-
+console.log(trianguloConsola(3));
+console.log(trianguloConsolaB(3));
+console.log(trianguloConsolaC(3));
 module.exports = { trianguloConsola, trianguloConsolaB, trianguloConsolaC };

@@ -16,5 +16,6 @@ function sumaNPrimerosNumerosPares(N) {
   }
   return sumaPares;
 }
+console.log(sumaNPrimerosNumerosPares(11));
 
 module.exports = { sumaNPrimerosNumerosPares };

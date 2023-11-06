@@ -15,4 +15,7 @@ function calcularPerimetro(a,b) {
  return `El perimetro es de ${perimetro}`;
 }
 
+
+console.log(calcularSuperficie(8,9));
+
 module.exports = { calcularPerimetro, calcularSuperficie };

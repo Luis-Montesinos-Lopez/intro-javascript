@@ -5,8 +5,17 @@
  * condiciones el algoritmo rellenara su hueco con un 0.
  */
 
-function generarVector() {
-  //Escribe tu codigo aqui
+function generarVector(array) {
+  let parVeinticinco=[];
+  for (let i = 0; i < array.length; i++) {
+      if(array[i]%2==0&&array[i]>25){
+        parVeinticinco[i]=array[i];
+      }else{
+        parVeinticinco[i]=0;
+      }
+    
+  }
+  return parVeinticinco;
 }
 
 module.exports = { generarVector };

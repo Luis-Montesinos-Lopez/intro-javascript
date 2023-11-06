@@ -5,7 +5,14 @@
  */
 
 function oddball_sum(nums) {
-  //Escribe tu codigo aqui
+  let sumaImpar=0;
+  for (let i = 0; i < nums.length; i++) {
+    if(nums[i]%2!=0){
+      sumaImpar+=nums[i];
+    }
+    
+  }
+  return sumaImpar;
 }
 
 module.exports = { oddball_sum };

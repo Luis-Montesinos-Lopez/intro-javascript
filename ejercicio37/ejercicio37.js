@@ -41,8 +41,19 @@
     "E"
  */
 
-function crearDni() {
-  //Escribe tu codigo aqui
-}
+// function crearDni(numero) {
+//   const letras=['T','R','W','A','G','M','Y','F','P','D','X','B','N','J','Z','S','Q','V','H','L','C','K','E'];
+//   let letra=numero%23;
+//   for(let i =0;i<letras.length;i++){
+//     if(i==letra){
+//       return`DNI Completo: ${numero}${letras[i]}`;
+//     }
+//   }
+// }
 
+function crearDni(numero) {
+  const letras=['T','R','W','A','G','M','Y','F','P','D','X','B','N','J','Z','S','Q','V','H','L','C','K','E'];
+  let letra=numero%23;
+  return `DNI Completo: ${numero}${letras[letra]}`;
+}
 module.exports = { crearDni };

@@ -6,12 +6,22 @@
  * hasta N
  */
 
-function isPrimeNumber() {
-  //Escribe tu codigo aqui
+
+
+function getPrimeNumbers(numero) {
+  let numPrimos=[];
+  let cuentaPrimos=0;
+  for(let i=2; i<=numero;i++){
+    if(i%2!=0&&i%3!=0){
+      numPrimos.push(i);
+      cuentaPrimos++;
+    }
+  }console.log(numPrimos);
+  return `Por debajo de ${numero} hay ${cuentaPrimos} numeros primos`;
+  
 }
 
-function getPrimeNumbers() {
-  //Escribe tu codigo aqui
-}
+
+console.log(getPrimeNumbers(47));
 
 module.exports = { getPrimeNumbers };

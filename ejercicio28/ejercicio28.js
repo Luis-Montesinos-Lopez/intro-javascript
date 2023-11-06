@@ -6,12 +6,10 @@
  */
 
 function timer(tiempo) {
-  for(let i=tiempo-1;i>=-1;i--){
-    if(i==-1){
-      console.log(`Ring!!`)
-  }else{
-    console.log(i)
+  for(let i=tiempo-1;i>=0;i--){
+    console.log(i);
   }
-}}
+  console.log(`¡¡Ring!!`);
+}
 
 module.exports = { timer };

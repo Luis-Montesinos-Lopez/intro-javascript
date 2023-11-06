@@ -15,15 +15,14 @@
 
 function notaAlumno(nombre,a,b,c) {
   let notaFinal=0;
-  let alumno=nombre;
-    if(alumno==""){
+    if(nombre==""){
       return`Error al recibir el nombre`
     }else{
-      if(a<0||b<0||c<0){
+      if(a<0||a>10||b<0||b>10||c<0||c>10){
         return`Ha habido un error con tus notas. Deben estar entre 1 y 10`
     }else{
       notaFinal=(a*0.1)+(b*0.5)+(c*0.4);
-      return`${alumno} tu nota final es de ${notaFinal} sobre 10`;
+      return`${nombre} tu nota final es de ${notaFinal} sobre 10`;
     }
 }}
 
